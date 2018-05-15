@@ -1,3 +1,6 @@
+//Nome: Pedro Henrique Silva
+//Matrícula: 11721EEL006
+
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
