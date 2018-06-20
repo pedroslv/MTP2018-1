@@ -54,7 +54,6 @@ void BinHex()
         binario = binario / 10;
     }
     printf("O valor em Hexadecimal eh: %X", hexad);
-    return 0;
 }
 
 void HexDec()
@@ -118,7 +117,7 @@ void DecBin()
         i++;
     }
  
-    for (int j = i - 1; j >= 0; j--)
+    for (j = i - 1; j >= 0; j--)
         printf("%d", binario[j]);
 }
 
@@ -148,4 +147,3 @@ void DecBin()
     return 0;
 
 }
-
