@@ -1,5 +1,5 @@
 //Nome: Pedro Henrique Silva
-//Matrícula: 11721EEL006
+//MatrÃ­cula: 11721EEL006
 
 #include <stdio.h>
 
@@ -179,7 +179,6 @@ int main()
 	    
 	}
 	
-	getch();
 	return 0;
 	
 }
