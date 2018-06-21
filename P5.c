@@ -1,5 +1,5 @@
 //Nome: Pedro Henrique Silva
-//Matrícula: 11721EEL006
+//MatrÃ­cula: 11721EEL006
 
 #include <stdio.h>
 #include <locale.h>
@@ -20,8 +20,8 @@ int main()
 	{
 		
 		case 1:{
-			printf("\n\tEntre com uma frase de até 255 caracteres: \n\t"); 
-			gets(msg);
+			printf("\n\tEntre com uma frase de atÃ© 255 caracteres: \n\t"); 
+			scanf("%s", msg);
 			char *mensagem= msg;
 			printf("\n\tFrase codificada:\n\t");
 			
