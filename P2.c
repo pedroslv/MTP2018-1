@@ -66,7 +66,7 @@ void HexDec()
  place = 1;
  
  printf("Entre com um numero hexadecimal qualquer: ");
- gets(hex);
+ scanf("%s", hex);
 
 len = strlen(hex);
  len--;
@@ -109,7 +109,7 @@ void DecBin()
     int binario[1000];
 
     int i = 0, j, n;
-    scanf("%i", &binario);
+    scanf("%d", &binario);
     while (n > 0) {
  
         binario[i] = n % 2;
