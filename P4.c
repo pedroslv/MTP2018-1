@@ -21,7 +21,5 @@ int main()
 	}
 	printf("\nO seu numero, em inteiro, eh: %d", num);
 	
-	getch();
-	
 	return 0;
 }
