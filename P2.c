@@ -7,7 +7,7 @@
 
 int main()
 {
-    int opcao, len;
+    int opcao, len, num;
     char bits[256];
     
     printf("Entre com uma das alternativas abaixo: ");
@@ -28,7 +28,7 @@ int main()
         int num, binario, decimal = 0, base = 1, resto;
  
     printf("Digite um numero binario\n");
-    scanf("%d", &num);
+    scanf("%i", &num);
     binario = num;
     while (num > 0)
     {
@@ -106,19 +106,35 @@ void HexBin()
     
 void DecBin()
 {
-    int binario[1000];
-
-    int i = 0, j, n;
-    scanf("%d", &binario);
-    while (n > 0) {
- 
-        binario[i] = n % 2;
-        n = n / 2;
-        i++;
+    int i = 0,num,nmr;
+	char bin[100];
+	
+	scanf("%d",&nmr);
+	for(num = 0; nmr >= (1 << num); num++);
+    
+    for (i = num-1; i >= 0; i--)
+        {
+        if (nmr % 2 == 0) 
+            {
+            
+                bin[i] = 0;
+            }
+        
+        else 
+        {
+            bin[i] = 1;
+        }
+        
+        nmr = nmr / 2;
     }
- 
-    for (j = i - 1; j >= 0; j--)
-        printf("%d", binario[j]);
+    
+    printf ("\nnumero binario:  ");
+    
+    for (i = 0; i <= num-1; i++) {
+        printf("%d", bin[i]);
+    }
+
+    
 }
 
     switch(opcao)
@@ -142,6 +158,22 @@ void DecBin()
         case 5:
         DecBin();
         break;
+    
+        case 6:
+			scanf("%d",&num);
+			printf("\nHexadecimal: %x",num);			
+		    break;
+		
+		case 7:
+			
+			scanf("%o",&num);
+			printf("\nDecimal: %d",num);
+			break;
+		
+		case 8:
+			scanf("%d",&num);
+			printf("\nOctal: %o",num);
+			break;
     }
     
     return 0;
